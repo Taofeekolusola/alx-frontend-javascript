@@ -1,6 +1,5 @@
 class HolbertonCourse {
   constructor(name, length, students) {
-    // Validate the type of each attribute
     if (typeof name !== 'string') {
       throw new TypeError('Name must be a string');
     }
@@ -11,13 +10,11 @@ class HolbertonCourse {
       throw new TypeError('Students must be an array of strings');
     }
 
-    // Store attributes with underscore prefix
     this._name = name;
     this._length = length;
     this._students = students;
   }
 
-  // Getter and setter for name
   get name() {
     return this._name;
   }
@@ -29,7 +26,6 @@ class HolbertonCourse {
     this._name = value;
   }
 
-  // Getter and setter for length
   get length() {
     return this._length;
   }
@@ -41,7 +37,6 @@ class HolbertonCourse {
     this._length = value;
   }
 
-  // Getter and setter for students
   get students() {
     return this._students;
   }
