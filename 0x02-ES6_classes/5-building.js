@@ -18,18 +18,3 @@ class Building {
     throw new Error('Class extending Building must override evacuationWarningMessage');
   }
 }
-
-class OfficeBuilding extends Building {
-  constructor(sqft, name) {
-    super(sqft);
-    this._name = name;
-  }
-
-  get name() {
-    return this._name;
-  }
-
-  evacuationWarningMessage() {
-    return `Evacuate the ${this._name} building immediately!`;
-  }
-}
