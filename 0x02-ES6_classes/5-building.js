@@ -14,15 +14,14 @@ class Building {
     return this._sqft;
   }
 
-  // Abstract method
   evacuationWarningMessage() {
     throw new Error('Class extending Building must override evacuationWarningMessage');
   }
 }
 
 class OfficeBuilding extends Building {
-  constructor (sqft, name) {
-    super (sqft);
+  constructor(sqft, name) {
+    super(sqft);
     this._name = name;
   }
 
