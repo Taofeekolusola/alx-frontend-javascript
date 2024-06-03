@@ -10,3 +10,4 @@ function getResponseFromAPI() {
     }
     return apiCall;
 }
+export default getResponseFromAPI;
