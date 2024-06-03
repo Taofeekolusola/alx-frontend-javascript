@@ -9,4 +9,3 @@ export function createUser() {
     resolve({ firstName: 'Guillaume', lastName: 'Salva' });
   });
 }
-export default uploadPhoto;
