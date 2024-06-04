@@ -1,4 +1,4 @@
-function setFromArray(is_Array) {
-	return new set(is_Array);
+function setFromArray(array) {
+    return new Set(array);
 }
 export default setFromArray;
