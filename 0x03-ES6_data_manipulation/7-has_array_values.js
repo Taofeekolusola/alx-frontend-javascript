@@ -4,3 +4,5 @@ function hasValuesFromArray(set, array) {
 	else:
 		return false;
 }
+
+export default hasValuesFromArray;
