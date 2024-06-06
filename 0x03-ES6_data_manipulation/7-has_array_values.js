@@ -1,8 +1,5 @@
 function hasValuesFromArray(set, array) {
-	if set(array) == true:
-		return true;
-	else:
-		return false;
+    return array.every(element => set.has(element));
 }
 
 export default hasValuesFromArray;
